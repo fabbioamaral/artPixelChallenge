@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <title>Pixel Art Challenge - Fabio Amaral</title>
+</head>
+<body>
+    <h1 id="title">Paleta de Cores</h1>
+    <section id="color-palette">
+        <div class="color black selected" style="background-color:black"></div>
+        <div class="color gold" style="background-color:gold"></div>
+        <div class="color grey" style="background-color:grey"></div>
+        <div class="color green" style="background-color:green"></div>
+    </section>
+
+    <section id="user-choice">
+        <p>Escolha o tamanho do quadro</p>
+        <div id="user-choice-div">
+            <input
+                type="number"
+                placeholder="5 a 50"
+                class="placeholder"
+                id="sizeOfBoard"
+                min="1"
+                max="50"        
+            />
+
+            <button class="button" id="btn-board-generator">Gerar Quadro</button>
+        </div>
+    </section>
+
+    <section id="pixel-board" class="pixelBoard">
+                
+
+    </section>
+
+    <button class="button" id="btn-clear-board">Limpar</button>
+
+</body>
+
+<script src="./script.js"></script>
+</html>
